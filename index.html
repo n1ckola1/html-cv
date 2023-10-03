@@ -4,94 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikolay CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img
-            src="https://sun9-50.userapi.com/impg/QDozsJ9X3k7l-mtiOUMnC0EaHeg_g-nbpjm4RQ/zqOLe_UAnLI.jpg?size=827x804&quality=95&sign=5a52677cc2c718abdb1b69acca68789e&type=album"
-            alt="Avatar"
-            width="200"
-          />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="avatar.jpg" alt="Avatar" class="avatar" />
+
+        <div class="info-text">
           <h1>Николай Ганин</h1>
-          <p>
-            <em>Я начинающий <strong>разработчик</strong></em>
-          </p>
+          <p>Я начинающий <strong>разработчик</strong></p>
           <p>Я люблю заниматься спортом и программировать</p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
+          <h4>Мои социальные сети</h4>
 
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-      <li><a href="https://vk.com" target="_blank">Vkontakte</a></li>
-      <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-    </ul>
+          <a href="https://vk.com" target="_blank">Vkontakte</a>
+          |
+          <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Бег</li>
+          <li>Чтение книг</li>
+          <li>Игра на укулеле</li>
+        </ol>
+      </div>
 
-    <h2>Мои хобби</h2>
-    <ol type="i">
-      <li>Бег</li>
-      <li>Чтение книг</li>
-      <li>Игра на укулеле</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table" border="1px">
+          <tr>
+            <th>Компании</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+          <tr>
+            <td>ШКОЛА</td>
+            <td>Школьник Обычный</td>
+            <td>2002 - 2013</td>
+          </tr>
+          <tr>
+            <td>Техникум</td>
+            <td>Студент Обычный</td>
+            <td>2016 - 2018</td>
+          </tr>
+          <tr>
+            <td>Работа</td>
+            <td>Работник Обычный</td>
+            <td>2018 - now</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h2>YouTube Курсы</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/@VladilenMinin">VladilenMinin</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@VladilenMinin">VladilenMinin</a>
+          </li>
+        </ul>
+      </div>
 
-    <h2>Опыт работы</h2>
-    <table border="1">
-      <tr>
-        <th>Компании</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>ШКОЛА</td>
-        <td>Школьник Обычный</td>
-        <td>2002 - 2013</td>
-      </tr>
-      <tr>
-        <td>Техникум</td>
-        <td>Студент Обычный</td>
-        <td>2016 - 2018</td>
-      </tr>
-    </table>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
 
-    <hr />
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Введите ваше имя" />
+            </div>
 
-    <h2>YouTube Курсы</h2>
-    <a href="youtube.html">Посмотреть список</a>
+            <div class="form-group">
+              <label for="email">Ваше email:</label>
+              <input type="email" id="email" placeholder="Введите email..." />
+            </div>
+          </div>
 
-    <hr />
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea name="" id="" cols="5" rows="2"></textarea>
+          </div>
 
-    <h2>Связаться со мной</h2>
+          <input class="btn" type="submit" value="Связаться!" />
+        </form>
+      </div>
 
-    <form action="/">
-      <label for="name">Ваше имя</label>
-      <input type="text" id="name" placeholder="Введите ваше имя" />
-
-      <br />
-
-      <label for="email">Ваше Email:</label>
-      <input type="email" id="email" placeholder="Введите email..." />
-
-      <br />
-
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea name="" id="" cols="5" rows="2"></textarea>
-
-      <br />
-
-      <input type="submit" value="Связаться!" />
-
-      <br />
-    </form>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
   </body>
 </html>
